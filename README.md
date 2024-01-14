@@ -6,7 +6,7 @@
 
 
 # What is LasSee
-**LasSee** is a simple and easy-to-use MATLAB app for viewing, subselecting and exporting well-log data from standard LAS files. This app is developed using the `readlas` toolbox [1](https://www.crewes.org/Documents/ResearchReports/2013/CRR201331.pdf) which is a CREWES subproject.
+**LasSee** is a simple and easy-to-use MATLAB app for viewing, subselecting and exporting well-log data from standard LAS files. This app is developed using the `readlas` toolbox [[1]](https://www.crewes.org/Documents/ResearchReports/2013/CRR201331.pdf) which is a CREWES subproject.
 
 # Main Features
 ## View LAS-File Contents
@@ -19,6 +19,7 @@ Ones the file(s) are added into the app, one may easily see:
 
 ## Import Logs into MATLAB Workspace
 Logs are stored into wells and wells, in turn, are stored into a single database structure called `welldb`. This well database is then imported into the MATLAB workspace. User may edit the well name corresponding to each LAS-file in the Files Table in the app. All the LAS-files that share the same well name, will be stored into single well under the `welldb` structure.
+**NOTE:** This feature will be hidden if the app is compiled into a standalone software.
 
 ## Export (Save) Logs 
 Another option is to export well-logs contents into different file formats on the storage. The supported file formats are as follows:
